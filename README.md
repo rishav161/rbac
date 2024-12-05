@@ -102,12 +102,12 @@ Ensure you have the following installed:
 
 ### Screenshots
 # Dashboard
-![Dashboard Screenshot](https://ibb.co/wwgv7x1)
+![Dashboard Screenshot](../rbac-management/src/screenshot/ss.png)
 
 # User Management
-![User Management Screenshot](https://ibb.co/MkwgBZX)
+![User Management Screenshot](../rbac-management/src/screenshot/ss.png)
 
 # Role Management
-![Role Management Screenshot](https://ibb.co/RBxVdxg)
+![Role Management Screenshot](../rbac-management/src/screenshot/ss.png)
 
 Thank You.
