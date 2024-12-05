@@ -7,6 +7,7 @@ const UserModal = ({ user, roles, onSave, onClose }) => {
     role: '',
   });
 
+  const [emailError, setEmailError] = useState(''); 
   useEffect(() => {
     if (user) {
       setFormData({
@@ -19,22 +20,39 @@ const UserModal = ({ user, roles, onSave, onClose }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData((prev) => ({
       ...prev,
       [name]: value.trim(),
     }));
+
+    if (name === 'email') {
+      validateEmail(value.trim());
+    }
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setEmailError('Please enter a valid email address.');
+    } else {
+      setEmailError('');
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (!formData.username || !formData.email || !formData.role) {
       alert('All fields are required!');
       return;
     }
-    if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      alert('Invalid email format!');
+
+    if (emailError) {
+      alert('Please fix the email field before submitting.');
       return;
     }
+
     onSave(formData);
   };
 
@@ -70,8 +88,15 @@ const UserModal = ({ user, roles, onSave, onClose }) => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className={`w-full px-4 py-3 border ${
+                emailError ? 'border-red-500' : 'border-gray-300'
+              } rounded-lg focus:outline-none focus:ring-2 ${
+                emailError ? 'focus:ring-red-500' : 'focus:ring-blue-500'
+              }`}
             />
+            {emailError && (
+              <p className="text-red-500 text-sm mt-1">{emailError}</p>
+            )}
           </div>
           <div>
             <label className="block text-gray-700 font-semibold mb-2">
