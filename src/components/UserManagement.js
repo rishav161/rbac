@@ -51,7 +51,6 @@ const UserManagement = ({ users, roles, onAddUser, onUpdateUser, onDeleteUser })
 
   return (
     <div className="p-6 bg-gray-100 rounded-lg mt-6">
-      {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-4">
         <h2 className="text-2xl font-bold text-gray-800">User Management</h2>
         <button

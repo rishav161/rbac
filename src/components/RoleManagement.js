@@ -45,7 +45,6 @@ const RoleManagement = ({ roles, onAddRole, onUpdateRole, onDeleteRole }) => {
 
   return (
     <div className="p-6 bg-gray-100 rounded-lg mt-6">
-      {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold text-gray-800">Role Management</h2>
         <button

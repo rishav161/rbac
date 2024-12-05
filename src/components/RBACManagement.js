@@ -14,12 +14,10 @@ const RBACManagement = ({
 }) => {
   return (
     <div className="container mx-auto px-4 py-8">
-      {/* Title Section */}
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
         Role-Based Access Control (RBAC) Management
       </h1>
 
-      {/* Grid Layout for User and Role Management */}
       <div className="grid md:grid-cols-2 gap-6">
         {/* User Management Section */}
         <div className="bg-white shadow-lg rounded-lg p-6">
