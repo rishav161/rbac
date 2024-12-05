@@ -105,9 +105,9 @@ Ensure you have the following installed:
 ![Dashboard Screenshot](https://i.postimg.cc/V6Lwy3f5/Screenshot-2024-12-05-111100.png)
 
 # User Management
-![User Management Screenshot](../rbac-management/src/screenshot/ss.png)
+![User Management Screenshot](https://i.postimg.cc/3x8CM1MW/Screenshot-2024-12-05-111216.png)
 
 # Role Management
-![Role Management Screenshot](../rbac-management/src/screenshot/ss.png)
+![Role Management Screenshot](https://i.postimg.cc/LsMS6JTq/Screenshot-2024-12-05-111226.png)
 
 Thank You.
