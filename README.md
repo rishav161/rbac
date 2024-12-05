@@ -102,7 +102,7 @@ Ensure you have the following installed:
 
 ### Screenshots
 # Dashboard
-![Dashboard Screenshot](../rbac-management/src/screenshot/ss.png)
+![Dashboard Screenshot](https://i.postimg.cc/V6Lwy3f5/Screenshot-2024-12-05-111100.png)
 
 # User Management
 ![User Management Screenshot](../rbac-management/src/screenshot/ss.png)
